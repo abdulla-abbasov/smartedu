@@ -1,0 +1,14 @@
+{% extends 'partials/_base.html '%}
+{% load static %}
+
+{% block content %}
+
+<br>
+<h2>Log In</h2>
+<form method="post">
+  {% csrf_token %}
+  {{ form.as_p }}
+  <button type="submit">Register</button>
+</form>
+
+{% endblock %}
